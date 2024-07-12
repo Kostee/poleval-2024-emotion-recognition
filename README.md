@@ -110,6 +110,9 @@ To combine the strengths of the individual models, a super ensemble model is cre
 ### Saving Models and Making Predictions
 The trained models and the super ensemble model function are saved to the `models/ensemble_final/` directory. The script also loads test datasets (`data/testA/concated_for_ensemble_final.csv` and `data/testB/concated_for_ensemble_final.csv`) and makes predictions using the super ensemble model. The predictions are saved to `predictions/testA/ensemble_final/predictions.csv` and `predictions/testB/ensemble_final/predictions.csv`.
 
+### Additional Script and Logging with Weights & Biases
+In the same directory, there is an additional script named `ensemble_final_with_wandb.ipynb`. This script extends the main script by integrating logging with the Weights & Biases tool. A dedicated subfolder, `wandb`, has also been provided, containing the generated outputs with the help of this tool.
+
 ## Input Data Preparation Details
 Everything is based on the same earlier mentioned four variants of the data: `baseline`, `gpt_corr`, `prep_bas`, and `prep_gpt`. For each of these variants, and for all three datasets (`train`, `test-A`, and `test-B`), 19 numerical features are generated:
 
